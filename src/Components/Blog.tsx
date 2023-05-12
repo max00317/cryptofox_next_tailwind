@@ -7,18 +7,17 @@ import {
   Button,
 } from '@material-tailwind/react'
 import Image from 'next/image'
-import BlogImg from "@/assets/img/blog_img.png"
+import BlogImg from '@/assets/img/blog_img.png'
 
 function Blog() {
   return (
     <div className='p-6'>
-      <h1>Insights From Our Conference</h1>
-      <div className='container'>
-        <div className='flex flex-wrap'>
-        <div className='md:w-[30%] m-3 m-3'>
+      <h1 className='text-center text-[64px] my-6'>Insights From Our Conference</h1>
+      <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-3'>
+        <div className='flex justify-center'>
           <Card className='mt-6 w-96'>
             <CardHeader color='blue-gray' className='relative h-56'>
-              <Image src={BlogImg} alt="blog image"></Image>
+              <Image src={BlogImg} alt='blog image'></Image>
             </CardHeader>
             <CardBody>
               <Typography variant='h5' color='blue-gray' className='mb-2'>
@@ -35,10 +34,10 @@ function Blog() {
             </CardFooter>
           </Card>
         </div>
-        <div className='md:w-[30%] m-3'>
+        <div className='flex justify-center'>
           <Card className='mt-6 w-96'>
             <CardHeader color='blue-gray' className='relative h-56'>
-              <Image src={BlogImg} alt="blog image"></Image>
+              <Image src={BlogImg} alt='blog image'></Image>
             </CardHeader>
             <CardBody>
               <Typography variant='h5' color='blue-gray' className='mb-2'>
@@ -55,10 +54,10 @@ function Blog() {
             </CardFooter>
           </Card>
         </div>
-        <div className='md:w-[30%] m-3'>
+        <div className='flex justify-center'>
           <Card className='mt-6 w-96'>
             <CardHeader color='blue-gray' className='relative h-56'>
-              <Image src={BlogImg} alt="blog image"></Image>
+              <Image src={BlogImg} alt='blog image'></Image>
             </CardHeader>
             <CardBody>
               <Typography variant='h5' color='blue-gray' className='mb-2'>
@@ -75,10 +74,10 @@ function Blog() {
             </CardFooter>
           </Card>
         </div>
-        <div className='md:w-[30%] m-3'>
+        <div className='flex justify-center'>
           <Card className='mt-6 w-96'>
             <CardHeader color='blue-gray' className='relative h-56'>
-              <Image src={BlogImg} alt="blog image"></Image>
+              <Image src={BlogImg} alt='blog image'></Image>
             </CardHeader>
             <CardBody>
               <Typography variant='h5' color='blue-gray' className='mb-2'>
@@ -95,10 +94,10 @@ function Blog() {
             </CardFooter>
           </Card>
         </div>
-        <div className='md:w-[30%] m-3'>
+        <div className='flex justify-center'>
           <Card className='mt-6 w-96'>
             <CardHeader color='blue-gray' className='relative h-56'>
-              <Image src={BlogImg} alt="blog image"></Image>
+              <Image src={BlogImg} alt='blog image'></Image>
             </CardHeader>
             <CardBody>
               <Typography variant='h5' color='blue-gray' className='mb-2'>
@@ -115,10 +114,10 @@ function Blog() {
             </CardFooter>
           </Card>
         </div>
-        <div className='md:w-[30%] m-3'>
+        <div className='flex justify-center'>
           <Card className='mt-6 w-96'>
             <CardHeader color='blue-gray' className='relative h-56'>
-              <Image src={BlogImg} alt="blog image"></Image>
+              <Image src={BlogImg} alt='blog image'></Image>
             </CardHeader>
             <CardBody>
               <Typography variant='h5' color='blue-gray' className='mb-2'>
@@ -134,7 +133,6 @@ function Blog() {
               <Button>Read More</Button>
             </CardFooter>
           </Card>
-        </div>
         </div>
       </div>
     </div>
