@@ -1,0 +1,30 @@
+.banner {
+  height: 100vh;
+  position: relative;
+  
+  .banner_img {
+    display: inline-block;
+    position:absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url(../assets/img/CED-Banner.png);
+    z-index: -1;
+  }
+
+  .bottom_main {
+    .main-text {
+        font-size: 4rem;
+    }
+
+    span {
+        font-size: 2rem;
+    }
+  }
+
+  .count_number {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
