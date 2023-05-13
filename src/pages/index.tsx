@@ -3,7 +3,10 @@ import Head from 'next/head'
 import Header from '@/Components/header'
 import Banner from '@/Components/Banner'
 import Event from '@/Components/Event'
-import Blog from "@/Components/Blog"
+import Blog from '@/Components/Blog'
+import Speakers from '@/Components/Speakers'
+import Sponsors from '@/Components/Sponsors'
+import Footer from '@/Components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +25,9 @@ export default function Home() {
       <Banner />
       <Event />
       <Blog />
+      <Speakers />
+      <Sponsors />
+      <Footer />
     </>
   )
 }

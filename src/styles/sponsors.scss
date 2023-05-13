@@ -1,0 +1,32 @@
+.sponsors {
+  position: relative;
+
+  .client {
+    min-height: 130px;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    position: relative;
+
+    img {
+      z-index: 10;
+      max-height: 75px;
+      position: relative;
+    }
+
+    .bg-client {
+      background-color: white;
+      background-image: none;
+      border: 1px solid #22262f;
+      border-radius: 10px;
+      position: absolute;
+      top: 0%;
+      bottom: 0%;
+      left: 0%;
+      right: 0%;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from "next/link"
+import Link from 'next/link'
 import {
   Navbar,
   Typography,
@@ -12,6 +12,7 @@ import Logo from '@/assets/img/logo.png'
 
 export default function Header() {
   const [openNav, setOpenNav] = React.useState(false)
+  const [isScroll, setIsScroll] = React.useState(false)
 
   React.useEffect(() => {
     window.addEventListener(
@@ -20,49 +21,36 @@ export default function Header() {
     )
   }, [])
 
+  React.useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 150) setIsScroll(true)
+      else setIsScroll(false)
+    })
+  })
+
   const navList = (
     <ul className='mb-4 mt-2 text-white flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6'>
-      <Typography
-        as='li'
-        variant='small'
-        className='p-1 font-normal'
-      >
+      <Typography as='li' variant='small' className='p-1 font-normal'>
         <Link href='#' className='flex items-center'>
           Home
         </Link>
       </Typography>
-      <Typography
-        as='li'
-        variant='small'
-        className='p-1 font-normal'
-      >
+      <Typography as='li' variant='small' className='p-1 font-normal'>
         <Link href='#' className='flex items-center'>
           About Us
         </Link>
       </Typography>
-      <Typography
-        as='li'
-        variant='small'
-        className='p-1 font-normal'
-      >
+      <Typography as='li' variant='small' className='p-1 font-normal'>
         <Link href='#' className='flex items-center'>
           Speakers
         </Link>
       </Typography>
-      <Typography
-        as='li'
-        variant='small'
-        className='p-1 font-normal'
-      >
+      <Typography as='li' variant='small' className='p-1 font-normal'>
         <Link href='#' className='flex items-center'>
           Sponsors
         </Link>
       </Typography>
-      <Typography
-        as='li'
-        variant='small'
-        className='p-1 font-normal'
-      >
+      <Typography as='li' variant='small' className='p-1 font-normal'>
         <Link href='#' className='flex items-center'>
           Partners
         </Link>
@@ -72,7 +60,12 @@ export default function Header() {
 
   return (
     <>
-      <Navbar className='fixed top-0 backdrop-blur-0 backdrop-filter-none bg-transparent border-none inset-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4'>
+      <Navbar
+        className={
+          'fixed top-0 backdrop-blur-0 backdrop-filter-none bg-transparent border-none inset-0 z-10 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4' +
+          (isScroll ? ' navbar-scroll' : '')
+        }
+      >
         <div className='flex items-center justify-between text-white'>
           <Typography
             as='a'
@@ -90,9 +83,22 @@ export default function Header() {
           </Typography>
           <div className='flex items-center gap-4'>
             <div className='mr-4 hidden lg:block justify-center'>{navList}</div>
-            <div className="flex hidden lg:block w-max gap-4">
-              <Button color="white" className='mr-2' variant='filled' aria-label='Become Sponsor'>Become Sponsor</Button>
-              <Button variant='outlined' aria-label='Register Now'>Register Now</Button>
+            <div className='hidden sm:block lg:block w-max gap-4'>
+              <Button
+                color='white'
+                className='mr-2'
+                variant='filled'
+                aria-label='Become Sponsor'
+              >
+                Become Sponsor
+              </Button>
+              <Button
+                variant='outlined'
+                color='white'
+                aria-label='Register Now'
+              >
+                Register Now
+              </Button>
             </div>
             <IconButton
               variant='text'
@@ -133,7 +139,9 @@ export default function Header() {
             </IconButton>
           </div>
         </div>
-        <Collapse className='bg-gray-500 rounded-b-sm' open={openNav}>{navList}</Collapse>
+        <Collapse className='nav-collapse' open={openNav}>
+          {navList}
+        </Collapse>
       </Navbar>
     </>
   )

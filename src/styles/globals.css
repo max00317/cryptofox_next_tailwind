@@ -11,8 +11,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 2, 13, 17;
+    --background-end-rgb: 2, 13, 17;
   }
 }
 
@@ -25,6 +25,17 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.nav-collapse {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.navbar-scroll {
+  background-color: black !important;
 }
 
 .banner {
@@ -54,4 +65,9 @@ body {
 .count_number {
   font-size: 2rem;
   font-weight: 700;
+}
+
+.speaker-slider .slick-slide {
+  display: flex !important;
+  justify-content: center;
 }
