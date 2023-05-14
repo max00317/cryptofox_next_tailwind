@@ -109,7 +109,7 @@ function Speakers() {
       }
   return (
     <div className='my-6 sm:p-6'>
-      <h2 className='text-center text-[52px] my-6'>
+      <h2 className='text-center text-[28px] sm:text-[52px] my-6'>
         Speakers
       </h2>
       <div className='mx-3 md:mx-16 speaker-slider'>

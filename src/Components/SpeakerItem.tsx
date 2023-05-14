@@ -19,7 +19,7 @@ function Speakers(props: propsType) {
         <Image src={image} alt='sunny lu' />
       </CardHeader>
       <CardBody className='text-center'>
-        <Typography variant='h4' color='blue-gray' className='mb-2'>
+        <Typography variant='h4' color='blue-gray' className='mb-2 text-sm'>
           {name}
         </Typography>
       </CardBody>

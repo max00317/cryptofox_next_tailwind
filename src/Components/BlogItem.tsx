@@ -30,7 +30,7 @@ function BlogItem(props: propsType) {
           </div>
         </CardHeader>
         <CardBody>
-          <Typography variant='h5' color='blue-gray' className='mb-2'>
+          <Typography variant='h5' color='blue-gray' className='mb-2 text-sm'>
             {title.length>40?title.slice(0, 40) + '...': title}
           </Typography>
           <Typography>

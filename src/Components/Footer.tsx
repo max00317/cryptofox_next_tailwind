@@ -22,7 +22,7 @@ export default function Footer() {
     <footer className="relative">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-          <Typography variant="h5" className="mb-6 text-5xl">
+          <Typography variant="h5" className="mb-6 text-2xl">
             CryptoFox
           </Typography>
           <div className="grid grid-cols-3 justify-between gap-4">
@@ -40,7 +40,7 @@ export default function Footer() {
                       as="a"
                       href="#"
                       color="gray"
-                      className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
+                      className="py-1.5 font-normal text-sm transition-colors hover:text-blue-gray-900"
                     >
                       {link}
                     </Typography>

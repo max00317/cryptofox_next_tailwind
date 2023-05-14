@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { useState } from 'react'
 import Image from 'next/image'
 import image1 from '@/assets/img/sponsors/Woodstock_Fund.png'
 import image2 from '@/assets/img/sponsors/Tykhe_Block_Ventures.png'
@@ -11,17 +10,11 @@ import image7 from '@/assets/img/sponsors/C3.png'
 import image8 from '@/assets/img/sponsors/DSA-Investments.png'
 
 function Sponsors() {
-  const [isFlipped, setIsFlipped] = useState(false)
-
-  const handleClick = () => {
-    setIsFlipped(!isFlipped)
-  }
-
   return (
     <div className='my-6 px-4 py-12 sm:px-[80px] sponsors'>
-      <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
+      <div className='grid grid-cols-1 gap-4 lg:grid-cols-3'>
         <div className='col-span-1'>
-          <h2 className='text-[2rem] md:text-[52px]  text-center'>
+          <h2 className='text-[28px] sm:text-[36px] pt-4  text-center'>
             Our Sponsors
           </h2>
           <p className='my-5 text-justify'>

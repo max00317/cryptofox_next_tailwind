@@ -5,12 +5,12 @@ import { Button } from '@material-tailwind/react'
 function Event() {
   return (
     <div className='p-3 sm:p-[80px]'>
-        <div className='grid grid-cols-1 md:grid-cols-2'>
+        <div className='grid grid-cols-1 lg:grid-cols-2'>
           <div className='flex justify-center'>
             <Image src={EventImg} alt='event image'></Image>
           </div>
           <div >
-            <h3 className='text-[42px] sm:text-[52px] text-center'>About Event</h3>
+            <h3 className='text-[28px] sm:text-[52px] text-center'>About Event</h3>
             <p className='my-5  text-justify'>
               CryptoFOX is the blockchain conference network bringing together
               the key players of crypto industry and experts to redefine the

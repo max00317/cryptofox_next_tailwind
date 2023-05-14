@@ -4,14 +4,16 @@ export default function Document() {
   return (
     <Html lang='en'>
       <Head>
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' />
         <link
-          href='https://fonts.google.com/specimen/Press+Start+2P?category=Display,Monospace&preview.text=Cryptogoat&preview.text_type=custom'
+          href='https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:wght@400;500&display=swap'
           rel='stylesheet'
         />
         <link
-          href='https://fonts.google.com/specimen/Rubik?preview.text=Cryptogoat&preview.text_type=custom'
+          href='https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap'
           rel='stylesheet'
-        />
+        ></link>
       </Head>
       <body>
         <Main />

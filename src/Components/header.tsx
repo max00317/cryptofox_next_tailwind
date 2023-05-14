@@ -29,7 +29,7 @@ export default function Header() {
   })
 
   const navList = (
-    <ul className='mb-4 mt-2 text-white flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6'>
+    <ul className='mb-4 mt-2 text-white  flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6'>
       <Typography as='li' variant='small' className='p-1 font-normal'>
         <Link href='#' className='flex items-center'>
           Home
@@ -83,10 +83,10 @@ export default function Header() {
           </Typography>
           <div className='flex items-center gap-4'>
             <div className='mr-4 hidden lg:block justify-center'>{navList}</div>
-            <div className='hidden sm:block lg:block w-max gap-4'>
+            {/* <div className='hidden  sm:block lg:block w-max gap-4'>
               <Button
                 color='white'
-                className='mr-2'
+                className='mr-2 text-[12px]'
                 variant='filled'
                 aria-label='Become Sponsor'
               >
@@ -96,10 +96,11 @@ export default function Header() {
                 variant='outlined'
                 color='white'
                 aria-label='Register Now'
+                className='text-[12px]'
               >
                 Register Now
               </Button>
-            </div>
+            </div> */}
             <IconButton
               variant='text'
               className='ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden'

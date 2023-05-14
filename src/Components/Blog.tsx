@@ -103,7 +103,7 @@ let settings = {
 function Blog() {
   return (
     <div className='p-3 py-8 blog'>
-      <h2 className='text-center text-[42px] sm:text-[52px] my-6'>Insights From Our Conference</h2>
+      <h2 className='text-center text-[28px] sm:text-[36px] my-6'>Insights From Our Conference</h2>
       <div className='mx-3 md:mx-16 blog-slider'>
         <Slider {...settings}>
           {

@@ -11,14 +11,29 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 2, 13, 17;
-    --background-end-rgb: 2, 13, 17;
+    /* --background-start-rgb: 2, 13, 17;
+    --background-end-rgb: 2, 13, 17; */
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.font-sans {
+  font-family: 'Press Start 2P', cursive;
+  font-style: normal;
+  font-weight: 400;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-style: italic;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -41,17 +56,6 @@ body {
 .banner {
   height: 100vh;
   position: relative;
-}
-
-.banner_img {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background: url(../assets/img/CED-Banner.png);
-  z-index: -1;
 }
 
 .bottom_main .main-text {
